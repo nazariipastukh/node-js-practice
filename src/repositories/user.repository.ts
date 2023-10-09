@@ -1,12 +1,12 @@
 import { FilterQuery } from "mongoose";
 
 import { User } from "../models/User.model";
-import { IUser } from "../types/user.type";
+import { IUser, IUserCredentials } from "../types/user.type";
 
 class UserRepository {
   public async getAll(): Promise<IUser[]> {
     const users = await User.find();
-    return users as any;
+    return users;
   }
 
   public async getOne(params: FilterQuery<IUser>): Promise<IUser> {
@@ -17,7 +17,11 @@ class UserRepository {
     return await User.findById(id);
   }
 
-  public async createUser(body: IUser): Promise<any> {
+  public async createUser(body: IUser): Promise<IUser> {
+    return await User.create(body);
+  }
+
+  public async register(body: IUserCredentials): Promise<IUser> {
     return await User.create(body);
   }
 

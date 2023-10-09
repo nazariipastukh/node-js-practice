@@ -7,4 +7,7 @@ export const configs = {
     process.env.DB_URL ||
     "mongodb+srv://nazariipastukh:nazariipastukh@node-practice.2ov4pua.mongodb.net/",
   PORT: process.env.PORT || 5001,
+  SECRET_SALT: process.env.SECRET_SALT,
+  JWT_ACCESS_SECRET: process.env.JWT_ACCESS_SECRET,
+  JWT_REFRESH_SECRET: process.env.JWT_REFRESH_SECRET,
 };
