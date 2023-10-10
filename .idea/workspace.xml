@@ -4,24 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0afd0b2a-c2b6-43c0-aa23-abe81922156a" name="Changes" comment="structure cars commit">
-      <change afterPath="$PROJECT_DIR$/src/controllers/auth.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Token.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repositories/token.repository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routers/auth.router.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/password.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/token.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/token.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="0afd0b2a-c2b6-43c0-aa23-abe81922156a" name="Changes" comment="auth commit">
+      <change afterPath="$PROJECT_DIR$/src/middlewares/auth.middleware.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configs/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Car.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Car.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/User.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/car.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/car.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/user.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/user.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/user.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/user.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/auth.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middlewares/user.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middlewares/user.middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/token.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/token.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/auth.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/auth.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/user.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/user.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/token.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/token.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/validators/user.validator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/validators/user.validator.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="3-node-js-ts-eslint-mongoose" />
+        <entry key="$PROJECT_DIR$" value="4_node-js-structure" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,7 +56,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;4__node-js-structure&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;5__node-js-auth&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -75,6 +70,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nazariy\IdeaProjects\nodejs-practice\src\middlewares" />
       <recent name="C:\Users\Nazariy\IdeaProjects\nodejs-practice" />
       <recent name="C:\Users\Nazariy\IdeaProjects\nodejs-practice\src" />
     </key>
@@ -97,7 +93,9 @@
       <workItem from="1696344347182" duration="6809000" />
       <workItem from="1696453429759" duration="5525000" />
       <workItem from="1696496285741" duration="14812000" />
-      <workItem from="1696796708408" duration="10000000" />
+      <workItem from="1696796708408" duration="10482000" />
+      <workItem from="1696882478584" duration="6974000" />
+      <workItem from="1696940309776" duration="5301000" />
     </task>
     <task id="LOCAL-00001" summary="ts-eslint-mongoose commit">
       <option name="closed" value="true" />
@@ -123,7 +121,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696536681765</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="auth commit">
+      <option name="closed" value="true" />
+      <created>1696809709866</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696809709866</updated>
+    </task>
+    <task id="LOCAL-00005" summary="auth commit">
+      <option name="closed" value="true" />
+      <created>1696809828148</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696809828148</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +158,8 @@
     <MESSAGE value="ts-eslint-mongoose commit" />
     <MESSAGE value="structure commit" />
     <MESSAGE value="structure cars commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="structure cars commit" />
+    <MESSAGE value="auth commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
